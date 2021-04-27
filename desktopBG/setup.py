@@ -8,11 +8,13 @@ Usage:
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = ['app.py', 'restrt.sh', 'lockscreengb.sh']
-OPTIONS = {'argv_emulation': False, 'includes':['PyQt5', 'os', 'sys'], 'packages':['PyQt5']}
+DATA_FILES = ['app.py', 'restrt.sh', 'lockscreengb.sh', 'images/icon.icns']
+OPTIONS = {'argv_emulation': False, 'includes':['PyQt5', 'os', 'sys'], 'packages':['PyQt5'], 'iconfile':'images/icon.icns'}
 
 setup(
     app=APP,
+    name="Desktop Background Util",
+    version="1.0",
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
