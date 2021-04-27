@@ -8,12 +8,12 @@ Usage:
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = []
-OPTIONS = {}
+DATA_FILES = ['app.py', 'restrt.sh', 'lockscreengb.sh']
+OPTIONS = {'argv_emulation': False, 'includes':['PyQt5', 'os', 'sys'], 'packages':['PyQt5']}
 
 setup(
     app=APP,
-    data_files=['app.py', 'lockscreengb.sh', 'restrt.sh'],
+    data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
 )
