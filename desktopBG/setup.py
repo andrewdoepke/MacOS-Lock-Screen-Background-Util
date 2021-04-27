@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = ['app.py', 'restrt.sh', 'lockscreengb.sh', 'images/icon.icns']
+DATA_FILES = ['app.py', 'restrt.sh', 'lockscreengb.sh']
 OPTIONS = {'argv_emulation': False, 'includes':['PyQt5', 'os', 'sys'], 'packages':['PyQt5'], 'iconfile':'images/icon.icns'}
 
 setup(
