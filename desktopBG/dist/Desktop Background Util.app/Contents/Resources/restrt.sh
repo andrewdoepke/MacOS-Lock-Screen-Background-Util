@@ -1,1 +1,1 @@
-/Users/andys_macc/Files/coding/MacOS Lock Screen Background Util/desktopBG/restrt.sh
+osascript -e 'tell app "loginwindow" to «event aevtrrst»'

@@ -1,1 +1,7 @@
-/Users/andys_macc/Files/coding/MacOS Lock Screen Background Util/desktopBG/lockscreengb.sh
+#!/bin/bash
+path=$(ls -d /Library/Caches/'Desktop Pictures'/*)
+rm "${path}"/lockscreen.png
+cp $1 lockscreen.png
+cp lockscreen.png "${path}"
+rm lockscreen.png
+echo "Set Successfully"
