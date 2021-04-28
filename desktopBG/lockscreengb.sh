@@ -1,6 +1,7 @@
 #!/bin/bash
-rm /Library/Caches/'Desktop Pictures'/DFB3ED3E-AAE7-4C3E-A7D6-CA825E2A9F09/lockscreen.png
+path=$(ls -d /Library/Caches/'Desktop Pictures'/*)
+rm "${path}"/lockscreen.png
 cp $1 lockscreen.png
-cp lockscreen.png /Library/Caches/'Desktop Pictures'/DFB3ED3E-AAE7-4C3E-A7D6-CA825E2A9F09
+cp lockscreen.png "${path}"
 rm lockscreen.png
 echo "Set Successfully"

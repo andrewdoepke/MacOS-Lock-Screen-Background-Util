@@ -14,7 +14,7 @@ OPTIONS = {'argv_emulation': False, 'includes':['PyQt5', 'os', 'sys'], 'packages
 setup(
     app=APP,
     name="Desktop Background Util",
-    version="1.0",
+    version="1.1",
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
